@@ -10,12 +10,12 @@ admin.initializeApp({
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCJqSOlwwuLPMnvuJ9edAEXlE_bJlfWWbQ",
-  authDomain: "playpal-723dd.firebaseapp.com",
-  projectId: "playpal-723dd",
-  storageBucket: "playpal-723dd.appspot.com",
-  messagingSenderId: "434887247433",
-  appId: "1:434887247433:web:636503bb15e5009e51e198",
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
 };
 
 // Initialize Firebase
